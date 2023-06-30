@@ -1,11 +1,11 @@
-interface Calculadora {
-    int calcular(int a, int b);
-}
+package edu.mariasoftware.ejemploscodigojava;
 
-
+/**
+ * Hace una demostracion del uso de funciones anonimas.
+ */
 public class EjemploFuncionAnonima {
     public static void main(String[] args) {
-        Calculadora suma = new Calculadora() {
+        IOperacion suma = new IOperacion() {
             // Esta es la funcion anonima
             @Override
             public int calcular(int a, int b) {
